@@ -14,7 +14,7 @@ Just a simple demo of a few technologies mixed up together...
 ### how to install?
 > 1.  [get tornado, it's awesome!](http://www.tornadoweb.org/)
 >2. clone this awesome repo
->3. open up porn 8889 or change the port from the run_me.py
+>3. open up port 8889 or change the port from the run_me.py
 >4. cd to folder and python run_me.py
 
 ### how to use?
