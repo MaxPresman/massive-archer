@@ -7,7 +7,8 @@ Just a simple demo of a few technologies mixed up together...
 >* Camera / Fileuploader for mobile (only *android*... for now..)
 
 ### what does it do?
->The basic idea is to take a picture with a mobile phone (android for now) and it will instantly be uploaded to a web browser for other people to watch without long polling and other annoying "old school" methods. 
+>The basic idea is to take a picture with a mobile phone (android for now) and it will instantly be uploaded to all
+>desktop web browsers that are currently open on the /browsers webpage. Websockets allows us to get rid of long polling and other annoying "old school" methods. 
 > This app is quite simple and light, just the way it should be. :)
 
 ### how to install?
