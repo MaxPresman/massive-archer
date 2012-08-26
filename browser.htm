@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Camera API</title>
+    </head>
+ 
+    <body>
+ 
+ 
+    </body>
+</html>
+
+<script type="text/javascript">
+	(function () {
+		
+		//connect to the socket
+		var loc = window.location, new_uri;
+		if (loc.protocol === "https:") 	{		new_uri = "wss:";	} 
+		else 							{		new_uri = "ws:";	}
+		new_uri += "//" + loc.host;
+		var ws 	 = new WebSocket( new_uri + "/browser_socket");
+
+		ws.onmessage = function (evt) {
+			var oImg=document.createElement("img");
+			oImg.setAttribute('src', evt.data);
+			oImg.setAttribute('alt', 'na');
+			oImg.setAttribute('width', '800px');
+			oImg.setAttribute('height', '600px');
+			document.body.appendChild(oImg);
+			var hr=document.createElement("hr");
+			document.body.appendChild(hr);
+		}
+
+	})();
+
+</script>
